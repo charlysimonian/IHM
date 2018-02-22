@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <VBox prefHeight="380.0" prefWidth="126.0" spacing="5.0">
+         <children>
+            <RadioButton fx:id="selecte" mnemonicParsing="true" text="Select/Move" />
+            <RadioButton fx:id="cercle" mnemonicParsing="true" text="Ellipse" />
+            <RadioButton fx:id="rectangle" mnemonicParsing="true" text="Rectangle" />
+            <RadioButton fx:id="ligne" mnemonicParsing="true" selected="true" text="Line" />
+            <ColorPicker fx:id="color_picker" />
+            <Button fx:id="delete" mnemonicParsing="false" text="Delete" />
+            <Button fx:id="clone" mnemonicParsing="false" text="Clone" />
+         </children>
+         <HBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </HBox.margin>
+      </VBox>
+      <Canvas fx:id="dessin" height="1000.0" nodeOrientation="INHERIT" width="473.0" />
+   </children>
+</HBox>
